@@ -1,0 +1,41 @@
+{
+  "name": "mariarojasarias.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neatdisorder/mariarojasarias.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neatdisorder/mariarojasarias.com/issues"
+  },
+  "homepage": "https://github.com/neatdisorder/mariarojasarias.com#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^8.0.2",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-react": "^7.18.6",
+    "eslint": "^8.31.0",
+    "eslint-plugin-react": "^7.31.11",
+    "frontmatter-markdown-loader": "^3.7.0",
+    "prettier": "2.8.1"
+  }
+}
