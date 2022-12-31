@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Component } from "react";
 import { attributes, react as HomeContent } from "../content/home.md";
+import React from "react";
 
 export default class Home extends Component {
   render() {
