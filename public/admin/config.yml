@@ -1,22 +1,116 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+# BACK END LOCAL PARA DESARROLLO - Comentar para hacer build en prod
+local_backend: true
+# Levantar server local: npx netlify-cms-proxy-server
+##
+# EDITOR DE SLUGS PARA TITLES DE PÁGINAS
+slug:
+  encoding: "ascii"
+  clean_accents: true
+##
+# DESHABILITAR VISTA PREVIA EN EDITOR
+editor:
+  preview: false
+##
 media_folder: public/img
 public_folder: img
 collections:
-  - name: "pages"
-    label: "Pages"
+  - label: "Settings"
+    name: "settings"
     files:
-      - label: "Home"
-        name: "home"
-        file: "content/home.md"
+      - label: "Settings"
+        name: "settings"
+        file: "content/settings.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - label: "Cats"
-            name: "cats"
+          - label: "Project order EN"
+            name: "projectOrder"
+            widget: relation
+            collection: "projectsEn"
+            value_field: "title"
+            search_fields: ["title"]
+            multiple: true
+  - label: "Pages [EN]"
+    name: "pagesEn"
+    files:
+      - label: "Bio"
+        name: "bio"
+        file: "content/en/bio.md"
+        fields:
+        - label: "Paragraphs"
+          name: "paragraphs"
+          widget: list
+          label_singular: "Paragraph"
+          fields:
+          - label: "Text"
+            name: "text"
+            widget: markdown
+            minimal: true
+            buttons: ["bold", "italic", "link"]
+            editor_components: []
+            modes: ["rich_text"]
+      - label: "Press"
+        name: "press"
+        file: "content/en/press.md"
+        fields:
+        - label: "Links"
+          name: "links"
+          widget: list
+          label_singular: "Link"
+          fields:
+            - { label: "Link text", name: "linkText", widget: string }
+            - { label: "URL", name: "url", widget: string }
+      - label: "Contact"
+        name: "contact"
+        file: "content/en/contact.md"
+        fields:
+          - { label: "Mail", name: "mail", widget: string }
+          - label: "Social media"
+            name: "socialMedia"
             widget: list
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "URL", name: "url", widget: string }
+              - label: "Platform"
+                name: "platform"
+                widget: select
+                options: ["Instagram", "Vimeo"]
+  - label: "Projects [EN]"
+    name: "projectsEn"
+    folder: "content/en/projects"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - label: "Specs"
+        name: "specs"
+        widget: list
+        label_singular: "Spec"
+        fields:
+          - { label: "Spec", name: "spec", widget: string }
+      - label: "Project content"
+        name: "projectContent"
+        widget: list
+        label_singular: "Block"
+        types:
+          - label: "Text block"
+            name: "textBlock"
+            widget: object
+            summary: "{{fields.text}}"
+            fields:
+            - label: "Text"
+              name: "text"
+              widget: markdown
+              minimal: true
+              buttons: ["bold", "italic", "link"]
+              editor_components: []
+              modes: ["rich_text"]
+          - label: "Image block"
+            name: "imageBlock"
+            widget: object
+            fields:
+              - { label: "Image", name: "image", widget: image }
+          - label: "Vimeo embed block"
+            name: "vimeoBlock"
+            widget: "object"
+            fields:
+              - { label: "ID", name: "id", widget: string }
