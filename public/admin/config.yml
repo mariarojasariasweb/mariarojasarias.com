@@ -19,51 +19,54 @@ public_folder: img
 collections:
   - label: "Settings"
     name: "settings"
+    extension: "json"
     files:
       - label: "Settings"
         name: "settings"
-        file: "content/settings.md"
+        file: "content/settings.json"
         fields:
-          - label: "Project order EN"
-            name: "projectOrder"
+          - label: "Projects order EN"
+            name: "projectsOrderEn"
             widget: relation
             collection: "projectsEn"
-            value_field: "title"
+            value_field: "{{slug}}"
             search_fields: ["title"]
+            display_fields: ["title"]
             multiple: true
   - label: "Pages [EN]"
     name: "pagesEn"
+    extension: "json"
     files:
       - label: "Bio"
         name: "bio"
-        file: "content/en/bio.md"
+        file: "content/en/bio.json"
         fields:
-        - label: "Paragraphs"
-          name: "paragraphs"
-          widget: list
-          label_singular: "Paragraph"
-          fields:
-          - label: "Text"
-            name: "text"
-            widget: markdown
-            minimal: true
-            buttons: ["bold", "italic", "link"]
-            editor_components: []
-            modes: ["rich_text"]
+          - label: "Paragraphs"
+            name: "paragraphs"
+            widget: list
+            label_singular: "Paragraph"
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: markdown
+                minimal: true
+                buttons: ["bold", "italic", "link"]
+                editor_components: []
+                modes: ["rich_text"]
       - label: "Press"
         name: "press"
-        file: "content/en/press.md"
+        file: "content/en/press.json"
         fields:
-        - label: "Links"
-          name: "links"
-          widget: list
-          label_singular: "Link"
-          fields:
-            - { label: "Link text", name: "linkText", widget: string }
-            - { label: "URL", name: "url", widget: string }
+          - label: "Links"
+            name: "links"
+            widget: list
+            label_singular: "Link"
+            fields:
+              - { label: "Link text", name: "linkText", widget: string }
+              - { label: "URL", name: "url", widget: string }
       - label: "Contact"
         name: "contact"
-        file: "content/en/contact.md"
+        file: "content/en/contact.json"
         fields:
           - { label: "Mail", name: "mail", widget: string }
           - label: "Social media"
@@ -78,6 +81,7 @@ collections:
   - label: "Projects [EN]"
     name: "projectsEn"
     folder: "content/en/projects"
+    extension: "json"
     create: true
     fields:
       - { label: "Title", name: "title", widget: string }
@@ -97,13 +101,13 @@ collections:
             widget: object
             summary: "{{fields.text}}"
             fields:
-            - label: "Text"
-              name: "text"
-              widget: markdown
-              minimal: true
-              buttons: ["bold", "italic", "link"]
-              editor_components: []
-              modes: ["rich_text"]
+              - label: "Text"
+                name: "text"
+                widget: markdown
+                minimal: true
+                buttons: ["bold", "italic", "link"]
+                editor_components: []
+                modes: ["rich_text"]
           - label: "Image block"
             name: "imageBlock"
             widget: object
