@@ -14,6 +14,10 @@ slug:
 editor:
   preview: false
 ##
+media_library:
+  name: uploadcare
+  config:
+    publicKey: e581fafc0720c186d59e
 media_folder: public/img
 public_folder: img
 collections:

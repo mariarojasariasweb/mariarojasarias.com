@@ -13,5 +13,31 @@
     {
       "spec": "2021"
     }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/e7396f51-c233-4891-b1a2-8d5be951c8b6/"
+    },
+    {
+      "type": "textBlock",
+      "text": "On July 19, 1929, in a town in Colombia, a group of shoemakers fought to improve living and working conditions in the country. They called themselves The Bolsheviks of Líbano Tolima. Their revolution lasted only one day, and its traces were almost completely lost. The women of this village share with Aura, an anarchist grandmother, a feeling that their rebellion is still going on."
+    },
+    {
+      "type": "textBlock",
+      "text": "Production\\\n[La Vulcanizadora](https://lavulcanizadora.com/)"
+    },
+    {
+      "type": "textBlock",
+      "text": "Co-production\\\n[Kintop](https://kintop.pt/)"
+    },
+    {
+      "type": "textBlock",
+      "text": "With the support of\\\nFondo para realización de cortometraje documental. FDC 2020\\\nBerlinale Talents Short Form Campus. 2020\\\nPrince Claus Fund. Next Generation 2019"
+    },
+    {
+      "type": "vimeoBlock",
+      "id": "571269931"
+    }
   ]
 }
