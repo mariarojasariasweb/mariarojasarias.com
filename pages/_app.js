@@ -2,6 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 import PropTypes from "prop-types";
 import theme from "../theme";
+import "@fontsource/roboto";
 
 export default function MyApp({ Component, pageProps }) {
   return (

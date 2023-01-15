@@ -5,14 +5,11 @@ import {
   getPagesList,
   getProjectContent,
 } from "../../src/readDataFiles";
+import Layout from "../../src/components/Layout";
 
 const Project = ({ pageData }) => {
-  console.log(pageData);
-
   return (
-    <>
-      <h1>Test</h1>
-    </>
+    <Layout menuData={pageData.menu} contentType={"project"} pageContent={pageData.pageContent} />
   );
 };
 
@@ -46,7 +43,7 @@ export async function getStaticProps(context) {
       projectsList: getProjectsList(context.locale),
       pagesList: getPagesList(context.locale),
     },
-    projectContent: getProjectContent(context.locale, context.params.project),
+    pageContent: getProjectContent(context.locale, context.params.project),
   };
 
   return {

@@ -10,8 +10,8 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: "Robot, sans-serif",
-    body: "Robot, sans-serif",
+    heading: "'Roboto', sans-serif",
+    body: "Roboto', sans-serif",
   },
   breakpoints: {
     sm: "320px",
