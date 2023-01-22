@@ -7,11 +7,14 @@ const theme = extendTheme({
         bg: "white",
         color: "black",
       },
+      a: {
+        textDecoration: "underline",
+      },
     },
   },
   fonts: {
     heading: "'Roboto', sans-serif",
-    body: "Roboto', sans-serif",
+    body: "'Roboto', sans-serif",
   },
   breakpoints: {
     sm: "320px",

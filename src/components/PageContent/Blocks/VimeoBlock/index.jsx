@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Flex, Text } from "@chakra-ui/react";
+import Vimeo from "@u-wave/react-vimeo";
+import { Box } from "@chakra-ui/react";
+import styles from "./styles";
 
 const VimeoBlock = ({ blockContent }) => {
   return (
-    <Flex>
-      <Text>{blockContent.id}</Text>
-    </Flex>
+    <Box {...styles.vimeoContainer}>
+      <Vimeo video={blockContent.id} responsive={true} />
+    </Box>
   );
 };
 

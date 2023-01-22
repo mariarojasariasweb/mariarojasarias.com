@@ -21,7 +21,6 @@ const PageContent = ({ pageContent }) => {
     <Flex {...styles.container}>
       <Title title={pageContent.title} />
       <SpecsList specs={pageContent.specs} />
-
       {pageContent.projectContent.map((block, key) => {
         const Component = blocks[block.type];
         return <Component blockContent={block} key={key} />;

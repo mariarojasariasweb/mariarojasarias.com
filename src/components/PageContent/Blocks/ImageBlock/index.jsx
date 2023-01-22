@@ -6,7 +6,7 @@ import styles from "./styles";
 const ImageBlock = ({ blockContent }) => {
   return (
     <Flex {...styles.container}>
-      <Image src={blockContent.image} />
+      <Image src={blockContent.image + "-/resize/1800x/-/format/webp/"} />
     </Flex>
   );
 };

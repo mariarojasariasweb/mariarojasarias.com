@@ -19,7 +19,7 @@ const MenuMobile = ({ menuData }) => {
           <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
           <AccordionButton {...styles.accordionButton}>—</AccordionButton>
         </Flex>
-        <AccordionPanel>
+        <AccordionPanel {...styles.accordionPanel}>
           <Flex {...styles.linksPanel}>
             <Text {...styles.menuLink}>Projects</Text>
             {menuData.pagesList.map((page, key) => (

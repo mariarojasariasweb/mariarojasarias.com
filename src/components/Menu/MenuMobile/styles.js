@@ -33,6 +33,9 @@ const styles = {
     fontSize: "16px",
     fontWeight: "400",
   },
+  accordionPanel: {
+    p: "0",
+  },
   linksPanel: {
     flexDirection: "column",
     marginTop: "18px",
@@ -40,9 +43,9 @@ const styles = {
   menuLink: {
     textTransform: "uppercase",
     color: "crimson",
-    fontSize: "10px",
+    fontSize: "11px",
     marginBottom: "13px",
-    letterSpacing: "2px"
+    letterSpacing: "2px",
   },
 };
 
