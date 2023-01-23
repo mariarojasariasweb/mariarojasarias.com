@@ -39,16 +39,20 @@ collections:
             multiple: true
   - label: "Pages [EN]"
     name: "pagesEn"
+    folder: "content/en"
     extension: "json"
-    files:
-      - label: "Bio"
-        name: "bio"
-        file: "content/en/bio.json"
-        fields:
-          - label: "Paragraphs"
-            name: "paragraphs"
-            widget: list
-            label_singular: "Paragraph"
+    create: false
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - label: "Page content"
+        name: "pageContent"
+        widget: list
+        label_singular: "Block"
+        types:
+          - label: "Text block"
+            name: "textBlock"
+            widget: object
+            summary: "{{fields.text}}"
             fields:
               - label: "Text"
                 name: "text"
@@ -57,31 +61,20 @@ collections:
                 buttons: ["bold", "italic", "link"]
                 editor_components: []
                 modes: ["rich_text"]
-      - label: "Press"
-        name: "press"
-        file: "content/en/press.json"
-        fields:
-          - label: "Links"
-            name: "links"
-            widget: list
-            label_singular: "Link"
+          - label: "Social media block"
+            name: "socialMediaBlock"
+            widget: object
             fields:
-              - { label: "Link text", name: "linkText", widget: string }
-              - { label: "URL", name: "url", widget: string }
-      - label: "Contact"
-        name: "contact"
-        file: "content/en/contact.json"
-        fields:
-          - { label: "Mail", name: "mail", widget: string }
-          - label: "Social media"
-            name: "socialMedia"
-            widget: list
-            fields:
-              - { label: "URL", name: "url", widget: string }
-              - label: "Platform"
-                name: "platform"
-                widget: select
-                options: ["Instagram", "Vimeo"]
+              - label: "Social media platforms"
+                name: "socialMediaPlatforms"
+                widget: list
+                label_singular: "Platform"
+                fields:
+                  - { label: "URL", name: "url", widget: string }
+                  - label: "Platform"
+                    name: "platform"
+                    widget: select
+                    options: ["Instagram", "Vimeo"]
   - label: "Projects [EN]"
     name: "projectsEn"
     folder: "content/en/projects"

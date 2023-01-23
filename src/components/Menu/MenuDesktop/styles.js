@@ -9,6 +9,10 @@ const styles = {
     fontSize: "16px",
     fontWeight: "400",
     marginBottom: "30px",
+    _hover: {
+      cursor: "pointer",
+      color: "firebrick",
+    },
   },
   accordionItem: {
     border: "0",

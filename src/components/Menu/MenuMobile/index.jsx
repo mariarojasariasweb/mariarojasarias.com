@@ -9,6 +9,7 @@ import {
   Text,
   Flex,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import styles from "./styles";
 
 const MenuMobile = ({ menuData }) => {
@@ -23,10 +24,11 @@ const MenuMobile = ({ menuData }) => {
           <Flex {...styles.linksPanel}>
             <Text {...styles.menuLink}>Projects</Text>
             {menuData.pagesList.map((page, key) => (
-              <Text key={key} {...styles.menuLink}>
-                {page.title}
-              </Text>
+              <Link key={key} href={"/" + page.slug}>
+                <Text {...styles.menuLink}>{page.title}</Text>
+              </Link>
             ))}
+            <Text {...styles.menuLink}>ESPAÑOL</Text>
           </Flex>
         </AccordionPanel>
       </AccordionItem>

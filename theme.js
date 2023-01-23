@@ -9,6 +9,9 @@ const theme = extendTheme({
       },
       a: {
         textDecoration: "underline",
+        _hover: {
+          color: "firebrick",
+        },
       },
     },
   },

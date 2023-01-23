@@ -44,8 +44,8 @@ const getPagesList = (locale) => {
   } else if (locale === "es") {
     pagesList = [
       { title: "Bio", slug: "bio" },
-      { title: "Prensa", slug: "press" },
-      { title: "Contacto", slug: "contact" },
+      { title: "Prensa", slug: "prensa" },
+      { title: "Contacto", slug: "contacto" },
     ];
   }
 
@@ -66,4 +66,16 @@ const getProjectContent = (locale, slug) => {
 
 /* FUNCIÓN PARA TRAER INFO DE UNA PÁGINA */
 
-export { getProjectsList, getPagesList, getProjectContent };
+const getPageContent = (locale, slug) => {
+  const pageInfo = JSON.parse(
+    fs.readFileSync(
+      contentDirectory + "/" + locale + "/" + slug + ".json"
+    )
+  );
+
+  return pageInfo;
+};
+
+/* FUNCIÓN PARA TRAER INFO DE UNA PÁGINA */
+
+export { getProjectsList, getPagesList, getProjectContent, getPageContent };

@@ -7,20 +7,25 @@ import styles from "./styles";
 import ImageBlock from "./Blocks/ImageBlock";
 import TextBlock from "./Blocks/TextBlock";
 import VimeoBlock from "./Blocks/VimeoBlock";
+import SocialMediaBlock from './Blocks/SocialMediaBlock';
 
-const PageContent = ({ pageContent }) => {
+const PageContent = ({ pageContent, contentType }) => {
 
   const blocks = {
     imageBlock: ImageBlock,
     textBlock: TextBlock,
     vimeoBlock: VimeoBlock,
+    socialMediaBlock: SocialMediaBlock
   };
 
   return (
     <Flex {...styles.container}>
       <Title title={pageContent.title} />
-      <SpecsList specs={pageContent.specs} />
-      {pageContent.projectContent.map((block, key) => {
+      {contentType === "project" && <SpecsList specs={pageContent.specs} />}
+      {contentType === "project" ? pageContent.projectContent.map((block, key) => {
+        const Component = blocks[block.type];
+        return <Component blockContent={block} key={key} />;
+      }) : pageContent.pageContent.map((block, key) => {
         const Component = blocks[block.type];
         return <Component blockContent={block} key={key} />;
       })}
@@ -30,6 +35,7 @@ const PageContent = ({ pageContent }) => {
 
 PageContent.propTypes = {
   pageContent: PropTypes.object.isRequired,
+  contentType: PropTypes.string.isRequired
 };
 
 export default PageContent;

@@ -1,13 +1,22 @@
 {
-  "mail": "maarojasar@gmail.com",
-  "socialMedia": [
+  "title": "Contact",
+  "pageContent": [
     {
-      "url": "https://www.instagram.com/maria.rojas.a/",
-      "platform": "Instagram"
+      "type": "textBlock",
+      "text": "maarojasar@gmail.com"
     },
     {
-      "url": "https://vimeo.com/maarojasar",
-      "platform": "Vimeo"
+      "type": "socialMediaBlock",
+      "socialMediaPlatforms": [
+        {
+          "url": "https://www.instagram.com/maria.rojas.a/",
+          "platform": "Instagram"
+        },
+        {
+          "url": "https://vimeo.com/maarojasar",
+          "platform": "Vimeo"
+        }
+      ]
     }
   ]
 }
