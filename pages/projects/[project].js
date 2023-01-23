@@ -8,6 +8,9 @@ import {
 import Layout from "../../src/components/Layout";
 
 const Project = ({ pageData }) => {
+
+  console.log(pageData.menu.projectsList);
+
   return (
     <Layout menuData={pageData.menu} contentType={"project"} pageContent={pageData.pageContent} />
   );

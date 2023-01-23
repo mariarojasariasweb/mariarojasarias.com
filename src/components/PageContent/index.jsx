@@ -9,7 +9,6 @@ import TextBlock from "./Blocks/TextBlock";
 import VimeoBlock from "./Blocks/VimeoBlock";
 
 const PageContent = ({ pageContent }) => {
-  console.log(pageContent);
 
   const blocks = {
     imageBlock: ImageBlock,

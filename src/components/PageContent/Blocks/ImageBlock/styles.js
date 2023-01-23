@@ -1,6 +1,6 @@
 const styles = {
   container: {
-    my: "4px",
+    my: { base: "4px", lg: "10px" },
   },
 };
 

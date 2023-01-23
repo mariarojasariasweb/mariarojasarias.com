@@ -9,29 +9,35 @@ import {
   AccordionButton,
   AccordionPanel,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import styles from "./styles";
 
 const MenuDesktop = ({ menuData }) => {
   return (
     <Flex {...styles.menuContainer}>
-      <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
+      <Link href="/">
+        <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
+      </Link>
       <Accordion allowToggle>
-        <AccordionItem>
-          <AccordionButton>
-            <Text>Projects</Text>
+        <AccordionItem {...styles.accordionItem}>
+          <AccordionButton {...styles.accordionButton}>
+            <Text>PROJECTS</Text>
           </AccordionButton>
-          <AccordionPanel>
+          <AccordionPanel {...styles.accordionPanel}>
             {menuData.projectsList.map((project, key) => (
-              <Text key={key}>{project.title}</Text>
+              <Link href={"/projects/" + project.slug} key={key}>
+                <Text {...styles.menuLink}>{project.title}</Text>
+              </Link>
             ))}
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
       {menuData.pagesList.map((page, key) => (
-        <Text key={key} {...styles.menuLink}>
-          {page.title}
-        </Text>
+        <Link href={"/" + page.slug} key={key}>
+          <Text {...styles.menuLink}>{page.title}</Text>
+        </Link>
       ))}
+      <Text {...styles.menuLink}>ESPAÑOL</Text>
     </Flex>
   );
 };

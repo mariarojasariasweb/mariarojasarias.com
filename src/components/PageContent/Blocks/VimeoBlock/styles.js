@@ -1,6 +1,6 @@
 const styles = {
   vimeoContainer: {
-    my: "7.5px",
+    my: { base: "7.5px", lg: "20px" },
   },
 };
 
