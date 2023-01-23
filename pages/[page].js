@@ -8,11 +8,12 @@ import {
 import Layout from "../src/components/Layout";
 
 const Page = ({ pageData }) => {
-
-  console.log(pageData);
-
   return (
-    <Layout menuData={pageData.menu} contentType={"page"} pageContent={pageData.pageContent} />
+    <Layout
+      menuData={pageData.menu}
+      contentType={"page"}
+      pageContent={pageData.pageContent}
+    />
   );
 };
 

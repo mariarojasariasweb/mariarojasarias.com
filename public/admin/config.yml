@@ -115,3 +115,81 @@ collections:
             widget: "object"
             fields:
               - { label: "ID", name: "id", widget: string }
+  - label: "Pages [ES]"
+    name: "pagesEs"
+    folder: "content/es"
+    extension: "json"
+    create: false
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - label: "Page content"
+        name: "pageContent"
+        widget: list
+        label_singular: "Block"
+        types:
+          - label: "Text block"
+            name: "textBlock"
+            widget: object
+            summary: "{{fields.text}}"
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: markdown
+                minimal: true
+                buttons: ["bold", "italic", "link"]
+                editor_components: []
+                modes: ["rich_text"]
+          - label: "Social media block"
+            name: "socialMediaBlock"
+            widget: object
+            fields:
+              - label: "Social media platforms"
+                name: "socialMediaPlatforms"
+                widget: list
+                label_singular: "Platform"
+                fields:
+                  - { label: "URL", name: "url", widget: string }
+                  - label: "Platform"
+                    name: "platform"
+                    widget: select
+                    options: ["Instagram", "Vimeo"]
+  - label: "Projects [ES]"
+    name: "projectsEs"
+    folder: "content/es/projects"
+    extension: "json"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - label: "Specs"
+        name: "specs"
+        widget: list
+        label_singular: "Spec"
+        fields:
+          - { label: "Spec", name: "spec", widget: string }
+      - label: "Project content"
+        name: "projectContent"
+        widget: list
+        label_singular: "Block"
+        types:
+          - label: "Text block"
+            name: "textBlock"
+            widget: object
+            summary: "{{fields.text}}"
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: markdown
+                minimal: true
+                buttons: ["bold", "italic", "link"]
+                editor_components: []
+                modes: ["rich_text"]
+          - label: "Image block"
+            name: "imageBlock"
+            widget: object
+            fields:
+              - { label: "Image", name: "image", widget: image }
+          - label: "Vimeo embed block"
+            name: "vimeoBlock"
+            widget: "object"
+            fields:
+              - { label: "ID", name: "id", widget: string }

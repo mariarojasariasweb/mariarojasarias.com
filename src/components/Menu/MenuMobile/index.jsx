@@ -11,8 +11,11 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import styles from "./styles";
+import { useRouter } from "next/router";
 
 const MenuMobile = ({ menuData }) => {
+  const router = useRouter();
+
   return (
     <Accordion allowToggle>
       <AccordionItem {...styles.accordionItem}>
@@ -24,11 +27,19 @@ const MenuMobile = ({ menuData }) => {
           <Flex {...styles.linksPanel}>
             <Text {...styles.menuLink}>Projects</Text>
             {menuData.pagesList.map((page, key) => (
-              <Link key={key} href={"/" + page.slug}>
+              <Link key={key} href={"/" + page.slug} passHref>
                 <Text {...styles.menuLink}>{page.title}</Text>
               </Link>
             ))}
-            <Text {...styles.menuLink}>ESPAÑOL</Text>
+            {router.locale === "en" ? (
+              <Link href={router.asPath} locale="es" passHref>
+                <Text {...styles.menuLink}>ESPAÑOL</Text>
+              </Link>
+            ) : (
+              <Link href={router.asPath} locale="en" passHref>
+                <Text {...styles.menuLink}>ENGLISH</Text>
+              </Link>
+            )}
           </Flex>
         </AccordionPanel>
       </AccordionItem>

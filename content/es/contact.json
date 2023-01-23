@@ -1,0 +1,22 @@
+{
+  "title": "Contacto",
+  "pageContent": [
+    {
+      "type": "textBlock",
+      "text": "maarojasar@gmail.com"
+    },
+    {
+      "type": "socialMediaBlock",
+      "socialMediaPlatforms": [
+        {
+          "url": "https://www.instagram.com/maria.rojas.a/",
+          "platform": "Instagram"
+        },
+        {
+          "url": "https://vimeo.com/maarojasar",
+          "platform": "Vimeo"
+        }
+      ]
+    }
+  ]
+}

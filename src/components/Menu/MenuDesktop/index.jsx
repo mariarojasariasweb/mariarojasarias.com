@@ -11,11 +11,14 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import styles from "./styles";
+import { useRouter } from "next/router";
 
 const MenuDesktop = ({ menuData }) => {
+  const router = useRouter();
+
   return (
     <Flex {...styles.menuContainer}>
-      <Link href="/">
+      <Link href="/" passHref>
         <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
       </Link>
       <Accordion allowToggle>
@@ -25,7 +28,7 @@ const MenuDesktop = ({ menuData }) => {
           </AccordionButton>
           <AccordionPanel {...styles.accordionPanel}>
             {menuData.projectsList.map((project, key) => (
-              <Link href={"/projects/" + project.slug} key={key}>
+              <Link href={"/projects/" + project.slug} key={key} passHref>
                 <Text {...styles.menuLink}>{project.title}</Text>
               </Link>
             ))}
@@ -33,11 +36,19 @@ const MenuDesktop = ({ menuData }) => {
         </AccordionItem>
       </Accordion>
       {menuData.pagesList.map((page, key) => (
-        <Link href={"/" + page.slug} key={key}>
+        <Link href={"/" + page.slug} key={key} passHref>
           <Text {...styles.menuLink}>{page.title}</Text>
         </Link>
       ))}
-      <Text {...styles.menuLink}>ESPAÑOL</Text>
+      {router.locale === "en" ? (
+        <Link href={router.asPath} locale="es" passHref>
+          <Text {...styles.menuLink}>ESPAÑOL</Text>
+        </Link>
+      ) : (
+        <Link href={router.asPath} locale="en" passHref>
+          <Text {...styles.menuLink}>ENGLISH</Text>
+        </Link>
+      )}
     </Flex>
   );
 };

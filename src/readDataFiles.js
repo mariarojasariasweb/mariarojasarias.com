@@ -44,8 +44,8 @@ const getPagesList = (locale) => {
   } else if (locale === "es") {
     pagesList = [
       { title: "Bio", slug: "bio" },
-      { title: "Prensa", slug: "prensa" },
-      { title: "Contacto", slug: "contacto" },
+      { title: "Prensa", slug: "press" },
+      { title: "Contacto", slug: "contact" },
     ];
   }
 
