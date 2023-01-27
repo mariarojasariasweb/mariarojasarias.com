@@ -43,6 +43,17 @@ const styles = {
       cursor: "pointer",
       color: "firebrick",
     },
+    currentPath: {
+      textTransform: "uppercase",
+      fontSize: "11px",
+      marginBottom: "20px",
+      letterSpacing: "2px",
+      color: "crimson",
+      _hover: {
+        cursor: "pointer",
+        color: "firebrick",
+      },
+    },
   },
 };
 

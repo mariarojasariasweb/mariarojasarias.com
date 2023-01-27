@@ -27,19 +27,41 @@ const MenuDesktop = ({ menuData }) => {
             <Text>PROJECTS</Text>
           </AccordionButton>
           <AccordionPanel {...styles.accordionPanel}>
-            {menuData.projectsList.map((project, key) => (
-              <Link href={"/projects/" + project.slug} key={key} passHref>
-                <Text {...styles.menuLink}>{project.title}</Text>
-              </Link>
-            ))}
+            {menuData.projectsList.map((project, key) => {
+              if (router.asPath.includes(project.slug)) {
+                return (
+                  <Link href={"/projects/" + project.slug} key={key} passHref>
+                    <Text {...styles.menuLink.currentPath}>
+                      {project.title}
+                    </Text>
+                  </Link>
+                );
+              } else {
+                return (
+                  <Link href={"/projects/" + project.slug} key={key} passHref>
+                    <Text {...styles.menuLink}>{project.title}</Text>
+                  </Link>
+                );
+              }
+            })}
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-      {menuData.pagesList.map((page, key) => (
-        <Link href={"/" + page.slug} key={key} passHref>
-          <Text {...styles.menuLink}>{page.title}</Text>
-        </Link>
-      ))}
+      {menuData.pagesList.map((page, key) => {
+        if (router.asPath.includes(page.slug)) {
+          return (
+            <Link href={"/" + page.slug} key={key} passHref>
+              <Text {...styles.menuLink.currentPath}>{page.title}</Text>
+            </Link>
+          );
+        } else {
+          return (
+            <Link href={"/" + page.slug} key={key} passHref>
+              <Text {...styles.menuLink}>{page.title}</Text>
+            </Link>
+          );
+        }
+      })}
       {router.locale === "en" ? (
         <Link href={router.asPath} locale="es" passHref>
           <Text {...styles.menuLink}>ESPAÑOL</Text>

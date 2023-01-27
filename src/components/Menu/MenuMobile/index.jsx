@@ -26,11 +26,21 @@ const MenuMobile = ({ menuData }) => {
         <AccordionPanel {...styles.accordionPanel}>
           <Flex {...styles.linksPanel}>
             <Text {...styles.menuLink}>Projects</Text>
-            {menuData.pagesList.map((page, key) => (
-              <Link key={key} href={"/" + page.slug} passHref>
-                <Text {...styles.menuLink}>{page.title}</Text>
-              </Link>
-            ))}
+            {menuData.pagesList.map((page, key) => {
+              if (router.asPath.includes(page.slug)) {
+                return (
+                  <Link href={"/" + page.slug} key={key} passHref>
+                    <Text {...styles.menuLink.currentPath}>{page.title}</Text>
+                  </Link>
+                );
+              } else {
+                return (
+                  <Link href={"/" + page.slug} key={key} passHref>
+                    <Text {...styles.menuLink}>{page.title}</Text>
+                  </Link>
+                );
+              }
+            })}
             {router.locale === "en" ? (
               <Link href={router.asPath} locale="es" passHref>
                 <Text {...styles.menuLink}>ESPAÑOL</Text>
