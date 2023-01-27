@@ -21,6 +21,7 @@ const getProjectsList = (locale) => {
       projectsListEn.push({
         title: projectInfo.title,
         slug: project,
+        mainImage: projectInfo.mainImage
       });
     });
 
@@ -40,6 +41,7 @@ const getProjectsList = (locale) => {
       projectsListEs.push({
         title: projectInfo.title,
         slug: project,
+        mainImage: projectInfo.mainImage
       });
     });
 

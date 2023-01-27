@@ -20,12 +20,16 @@ const MenuMobile = ({ menuData }) => {
     <Accordion allowToggle>
       <AccordionItem {...styles.accordionItem}>
         <Flex {...styles.menuHeader}>
-          <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
+          <Link href={"/"} passHref>
+            <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
+          </Link>
           <AccordionButton {...styles.accordionButton}>—</AccordionButton>
         </Flex>
         <AccordionPanel {...styles.accordionPanel}>
           <Flex {...styles.linksPanel}>
-            <Text {...styles.menuLink}>Projects</Text>
+            <Link href={"/"} passHref>
+              <Text {...styles.menuLink}>Projects</Text>
+            </Link>
             {menuData.pagesList.map((page, key) => {
               if (router.asPath.includes(page.slug)) {
                 return (

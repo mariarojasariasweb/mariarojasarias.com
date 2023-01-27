@@ -28,7 +28,6 @@ const styles = {
     },
     textTransform: "uppercase",
     fontSize: "11px",
-    marginBottom: "20px",
     letterSpacing: "2px",
   },
   accordionPanel: {

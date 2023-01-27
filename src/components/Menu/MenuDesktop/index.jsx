@@ -24,7 +24,7 @@ const MenuDesktop = ({ menuData }) => {
       <Accordion allowToggle>
         <AccordionItem {...styles.accordionItem}>
           <AccordionButton {...styles.accordionButton}>
-            <Text>PROJECTS</Text>
+            <Text {...styles.menuLink}>PROJECTS</Text>
           </AccordionButton>
           <AccordionPanel {...styles.accordionPanel}>
             {menuData.projectsList.map((project, key) => {

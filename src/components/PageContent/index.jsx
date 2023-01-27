@@ -7,35 +7,48 @@ import styles from "./styles";
 import ImageBlock from "./Blocks/ImageBlock";
 import TextBlock from "./Blocks/TextBlock";
 import VimeoBlock from "./Blocks/VimeoBlock";
-import SocialMediaBlock from './Blocks/SocialMediaBlock';
+import SocialMediaBlock from "./Blocks/SocialMediaBlock";
+import ProjectTiles from "./ProjectTiles";
 
 const PageContent = ({ pageContent, contentType }) => {
-
   const blocks = {
     imageBlock: ImageBlock,
     textBlock: TextBlock,
     vimeoBlock: VimeoBlock,
-    socialMediaBlock: SocialMediaBlock
+    socialMediaBlock: SocialMediaBlock,
   };
+
+  console.log(pageContent);
 
   return (
     <Flex {...styles.container}>
-      <Title title={pageContent.title} />
-      {contentType === "project" && <SpecsList specs={pageContent.specs} />}
-      {contentType === "project" ? pageContent.projectContent.map((block, key) => {
-        const Component = blocks[block.type];
-        return <Component blockContent={block} key={key} />;
-      }) : pageContent.pageContent.map((block, key) => {
-        const Component = blocks[block.type];
-        return <Component blockContent={block} key={key} />;
-      })}
+      {contentType === "project" ? (
+        <>
+          <Title title={pageContent.title} />
+          <SpecsList specs={pageContent.specs} />
+          {pageContent.projectContent.map((block, key) => {
+            const Component = blocks[block.type];
+            return <Component blockContent={block} key={key} />;
+          })}
+        </>
+      ) : contentType === "page" ? (
+        <>
+          <Title title={pageContent.title} />
+          {pageContent.pageContent.map((block, key) => {
+            const Component = blocks[block.type];
+            return <Component blockContent={block} key={key} />;
+          })}
+        </>
+      ) : (
+        <ProjectTiles projectsList={pageContent.projectsList} />
+      )}
     </Flex>
   );
 };
 
 PageContent.propTypes = {
   pageContent: PropTypes.object.isRequired,
-  contentType: PropTypes.string.isRequired
+  contentType: PropTypes.string.isRequired,
 };
 
 export default PageContent;

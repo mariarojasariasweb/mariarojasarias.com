@@ -1,29 +1,38 @@
-// import Head from "next/head";
-// import { Component } from "react";
-// import { attributes, react as HomeContent } from "../content/home.md";
-// import React from "react";
+import React from "react";
+import PropTypes from "prop-types";
+import Layout from "../src/components/Layout";
+import { getProjectsList, getPagesList } from "../src/readDataFiles";
 
-// export default class Home extends Component {
-//   render() {
-//     let { title, cats } = attributes;
-//     return (
-//       <>
-//         <Head>
-//           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-//         </Head>
-//         <article>
-//           <h1>{title}</h1>
-//           <HomeContent />
-//           <ul>
-//             {cats.map((cat, k) => (
-//               <li key={k}>
-//                 <h2>{cat.name}</h2>
-//                 <p>{cat.description}</p>
-//               </li>
-//             ))}
-//           </ul>
-//         </article>
-//       </>
-//     );
-//   }
-// }
+const Index = ({ pageData }) => {
+  return (
+    <Layout
+      menuData={pageData.menu}
+      contentType={"homepage"}
+      pageContent={pageData.pageContent}
+    />
+  );
+};
+
+export async function getStaticProps(context) {
+  const pageData = {
+    menu: {
+      projectsList: getProjectsList(context.locale),
+      pagesList: getPagesList(context.locale),
+    },
+    pageContent: {
+      projectsList: getProjectsList(context.locale),
+    },
+  };
+
+  return {
+    props: {
+      pageData,
+    },
+  };
+}
+
+Index.propTypes = {
+  pageData: PropTypes.object.isRequired,
+};
+
+export default Index;

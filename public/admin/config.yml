@@ -90,6 +90,7 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: string }
+      - { label: "Main image", name: "mainImage", widget: image }
       - label: "Specs"
         name: "specs"
         widget: list
@@ -168,6 +169,7 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: string }
+      - { label: "Main image", name: "mainImage", widget: image }
       - label: "Specs"
         name: "specs"
         widget: list
