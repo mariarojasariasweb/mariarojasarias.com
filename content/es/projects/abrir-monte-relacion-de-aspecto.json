@@ -2,13 +2,13 @@
   "title": "Abrir monte: Relación de aspecto",
   "specs": [
     {
-      "spec": "Exhibition - Curatorship"
+      "spec": "Exhibición - Curaduría"
     }
   ],
   "projectContent": [
     {
       "type": "textBlock",
-      "text": "Concept, curatorship and production:\\\nMaria Rojas Arias & Andrés Jurado\\\nLa Vulcanizadora\\\n2021\\\nBogotá, Colombia"
+      "text": "Concepto, curaduría y producción:\\\nMaria Rojas Arias & Andrés Jurado\\\nLa Vulcanizadora\\\n2021\\\nBogotá, Colombia"
     },
     {
       "type": "imageBlock",
@@ -80,19 +80,19 @@
     },
     {
       "type": "textBlock",
-      "text": "**Concept, curatorship and production**\\\nMaria Rojas Arias & Andrés Jurado\\\nLa Vulcanizadora"
+      "text": "**Concepto, curaduría y producción**\\\nMaria Rojas Arias & Andrés Jurado\\\nLa Vulcanizadora"
     },
     {
       "type": "textBlock",
-      "text": "**Production support**\\\nPaula Juliana Torrado"
+      "text": "**Apoyo a la producción**\\\nPaula Juliana Torrado"
     },
     {
       "type": "textBlock",
-      "text": "**Artists**\\\nCarolina Rosero\\\nNatalia Pérez\\\nPaula Torrado\\\nPablo Baresch\\\nMaria Rojas Arias\\\nManuela Sotomonte\\\nAndrés Jurado\\\nKatherine Romero\\\nJavier Morales\\\nDavid Ospina"
+      "text": "**Artistas**\\\nCarolina Rosero\\\nNatalia Pérez\\\nPaula Torrado\\\nPablo Baresch\\\nMaria Rojas Arias\\\nManuela Sotomonte\\\nAndrés Jurado\\\nKatherine Romero\\\nJavier Morales\\\nDavid Ospina"
     },
     {
       "type": "textBlock",
-      "text": "**Assembly**\\\nRicardo Angulo\\\nRonaldo Jimenez\\\nJohn Campos"
+      "text": "**Montaje**\\\nRicardo Angulo\\\nRonaldo Jimenez\\\nJohn Campos"
     },
     {
       "type": "textBlock",
@@ -100,11 +100,11 @@
     },
     {
       "type": "textBlock",
-      "text": "**Photography**\\\nLaura Imery"
+      "text": "**Fotografía**\\\nLaura Imery"
     },
     {
       "type": "textBlock",
-      "text": "**With the support**\\\nFundación Príncipe Claus para la cultura y el Desarrollo\\\nIdartes – Beca Red Galería Santa Fe 2020"
+      "text": "**Con el apoyo de**\\\nFundación Príncipe Claus para la cultura y el Desarrollo\\\nIdartes – Beca Red Galería Santa Fe 2020"
     }
   ]
 }

@@ -37,6 +37,14 @@ collections:
             search_fields: ["title"]
             display_fields: ["title"]
             multiple: true
+          - label: "Projects order ES"
+            name: "projectsOrderEs"
+            widget: relation
+            collection: "projectsEs"
+            value_field: "{{slug}}"
+            search_fields: ["title"]
+            display_fields: ["title"]
+            multiple: true
   - label: "Pages [EN]"
     name: "pagesEn"
     folder: "content/en"

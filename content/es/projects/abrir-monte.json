@@ -1,0 +1,63 @@
+{
+  "title": "Abrir monte",
+  "specs": [
+    {
+      "spec": "Film"
+    },
+    {
+      "spec": "16 mm. Transfer 4K"
+    },
+    {
+      "spec": "25' 47''"
+    },
+    {
+      "spec": "2021"
+    }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/e7396f51-c233-4891-b1a2-8d5be951c8b6/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/a01f1e84-3394-4358-93af-bcf2f239e0ed/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/78e544d8-65ce-4142-813b-524c670f37a5/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/511e1dd6-8c34-4268-9128-ab5a18156d55/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/70d54b50-008b-40cf-a8c7-e202cf2901d9/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/439b9489-da83-475c-a8e6-4a0a757c2fc6/"
+    },
+    {
+      "type": "textBlock",
+      "text": "El 19 de julio de 1929, en un pueblo de Colombia, un grupo de zapateros luchó por mejorar las condiciones de vida y de trabajo en el país. Se llamaron \"Los Bolcheviques del Líbano, Tolima\". Su revolución duró solo un día e intentaron borrar sus rastros. Las mujeres de esta vereda se encuentran con Aura, una abuela anarquista, en la sensación de que su rebelión aún sigue sucediendo."
+    },
+    {
+      "type": "textBlock",
+      "text": "**Producción**\\\n[La Vulcanizadora](https://lavulcanizadora.com/)"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Co-producción**\\\n[Kintop](https://kintop.pt/)"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Con el apoyo de**\\\nFondo para realización de cortometraje documental. FDC 2020\\\nBerlinale Talents Short Form Campus. 2020\\\nPrince Claus Fund. Next Generation 2019"
+    },
+    {
+      "type": "vimeoBlock",
+      "id": "571269931"
+    }
+  ]
+}

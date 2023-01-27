@@ -26,7 +26,24 @@ const getProjectsList = (locale) => {
 
     return projectsListEn;
   } else if (locale === "es") {
-    return [];
+    const settingsFile = JSON.parse(
+      fs.readFileSync(contentDirectory + "/settings.json")
+    );
+
+    const projectsListEs = [];
+
+    settingsFile.projectsOrderEs.forEach((project) => {
+      const projectInfo = JSON.parse(
+        fs.readFileSync(contentDirectory + "/es/projects/" + project + ".json")
+      );
+
+      projectsListEs.push({
+        title: projectInfo.title,
+        slug: project,
+      });
+    });
+
+    return projectsListEs;
   }
 };
 
