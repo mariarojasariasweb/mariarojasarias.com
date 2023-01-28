@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 # BACK END LOCAL PARA DESARROLLO - Comentar para hacer build en prod
-# local_backend: true
+local_backend: true
 # Levantar server local: npx netlify-cms-proxy-server
 ##
 # EDITOR DE SLUGS PARA TITLES DE PÁGINAS
