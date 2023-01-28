@@ -24,7 +24,7 @@ const MenuDesktop = ({ menuData }) => {
       <Accordion allowToggle>
         <AccordionItem {...styles.accordionItem}>
           <AccordionButton {...styles.accordionButton}>
-            <Text {...styles.menuLink}>PROJECTS</Text>
+            <Text {...styles.menuLink}>{router.locale === "en" ? "PROJECTS" : "PROYECTOS"}</Text>
           </AccordionButton>
           <AccordionPanel {...styles.accordionPanel}>
             {menuData.projectsList.map((project, key) => {

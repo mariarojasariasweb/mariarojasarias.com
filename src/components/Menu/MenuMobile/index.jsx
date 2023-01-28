@@ -29,11 +29,11 @@ const MenuMobile = ({ menuData }) => {
           <Flex {...styles.linksPanel}>
             {router.asPath === "/" ? (
               <Link href={"/"} passHref>
-                <Text {...styles.menuLink.currentPath}>Projects</Text>
+                <Text {...styles.menuLink.currentPath}>{router.locale === "en" ? "Projects" : "Proyectos"}</Text>
               </Link>
             ) : (
               <Link href={"/"} passHref>
-                <Text {...styles.menuLink}>Projects</Text>
+                <Text {...styles.menuLink}>{router.locale === "en" ? "Projects" : "Proyectos"}</Text>
               </Link>
             )}
             {menuData.pagesList.map((page, key) => {
