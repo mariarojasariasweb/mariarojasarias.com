@@ -36,7 +36,7 @@ const MenuDesktop = ({ menuData, projectsIsOpen, handleProjects }) => {
               if (router.query.project === project.slug) {
                 return (
                   <Link href={"/projects/" + project.slug} key={key} passHref>
-                    <Text {...styles.menuLink.currentPage}>
+                    <Text {...styles.menuLink.current}>
                       {project.title}
                     </Text>
                   </Link>
@@ -56,7 +56,7 @@ const MenuDesktop = ({ menuData, projectsIsOpen, handleProjects }) => {
         if (router.query.page === page.slug) {
           return (
             <Link href={"/" + page.slug} key={key} passHref>
-              <Text {...styles.menuLink.currentPage}>{page.title}</Text>
+              <Text {...styles.menuLink.current}>{page.title}</Text>
             </Link>
           );
         } else {
