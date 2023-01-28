@@ -18,8 +18,6 @@ const PageContent = ({ pageContent, contentType }) => {
     socialMediaBlock: SocialMediaBlock,
   };
 
-  console.log(pageContent);
-
   return (
     <Flex {...styles.container}>
       {contentType === "project" ? (

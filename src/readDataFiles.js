@@ -21,7 +21,7 @@ const getProjectsList = (locale) => {
       projectsListEn.push({
         title: projectInfo.title,
         slug: project,
-        mainImage: projectInfo.mainImage
+        mainImage: projectInfo.mainImage,
       });
     });
 
@@ -41,7 +41,7 @@ const getProjectsList = (locale) => {
       projectsListEs.push({
         title: projectInfo.title,
         slug: project,
-        mainImage: projectInfo.mainImage
+        mainImage: projectInfo.mainImage,
       });
     });
 
@@ -87,14 +87,31 @@ const getProjectContent = (locale, slug) => {
 
 const getPageContent = (locale, slug) => {
   const pageInfo = JSON.parse(
-    fs.readFileSync(
-      contentDirectory + "/" + locale + "/" + slug + ".json"
-    )
+    fs.readFileSync(contentDirectory + "/" + locale + "/" + slug + ".json")
   );
 
   return pageInfo;
 };
 
-/* FUNCIÓN PARA TRAER INFO DE UNA PÁGINA */
+/* FUNCIÓN PARA TRAER METADATA */
 
-export { getProjectsList, getPagesList, getProjectContent, getPageContent };
+const getMetadata = (locale) => {
+  const metadata = JSON.parse(
+    fs.readFileSync(contentDirectory + "/settings.json")
+  );
+
+  const output =
+    locale === "en"
+      ? { title: metadata.titleEn, description: metadata.descriptionEn }
+      : { title: metadata.titleEs, description: metadata.descriotionEs };
+
+  return output;
+};
+
+export {
+  getProjectsList,
+  getPagesList,
+  getProjectContent,
+  getPageContent,
+  getMetadata,
+};

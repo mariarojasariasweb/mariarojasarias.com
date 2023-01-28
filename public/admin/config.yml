@@ -45,6 +45,10 @@ collections:
             search_fields: ["title"]
             display_fields: ["title"]
             multiple: true
+          - { label: "Title EN", name: "titleEn", widget: string }
+          - { label: "Title ES", name: "titleEs", widget: string }
+          - { label: "Description EN", name: "descriptionEn", widget: string }
+          - { label: "Description ES", name: "descriptionEs", widget: string }
   - label: "Pages [EN]"
     name: "pagesEn"
     folder: "content/en"
