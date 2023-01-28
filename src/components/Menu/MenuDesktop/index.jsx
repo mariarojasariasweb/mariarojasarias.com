@@ -16,8 +16,6 @@ import { useRouter } from "next/router";
 const MenuDesktop = ({ menuData, projectsIsOpen, handleProjects }) => {
   const router = useRouter();
 
-  console.log(projectsIsOpen);
-
   return (
     <Flex {...styles.menuContainer}>
       <Link href="/" passHref>
@@ -35,7 +33,7 @@ const MenuDesktop = ({ menuData, projectsIsOpen, handleProjects }) => {
           </AccordionButton>
           <AccordionPanel {...styles.accordionPanel}>
             {menuData.projectsList.map((project, key) => {
-              if (router.asPath.includes(project.slug)) {
+              if (router.query.project === project.slug) {
                 return (
                   <Link href={"/projects/" + project.slug} key={key} passHref>
                     <Text {...styles.menuLink.currentPage}>
@@ -55,7 +53,7 @@ const MenuDesktop = ({ menuData, projectsIsOpen, handleProjects }) => {
         </AccordionItem>
       </Accordion>
       {menuData.pagesList.map((page, key) => {
-        if (router.asPath.includes(page.slug)) {
+        if (router.query.page === page.slug) {
           return (
             <Link href={"/" + page.slug} key={key} passHref>
               <Text {...styles.menuLink.currentPage}>{page.title}</Text>

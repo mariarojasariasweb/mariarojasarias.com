@@ -29,15 +29,19 @@ const MenuMobile = ({ menuData }) => {
           <Flex {...styles.linksPanel}>
             {router.asPath === "/" ? (
               <Link href={"/"} passHref>
-                <Text {...styles.menuLink.currentPath}>{router.locale === "en" ? "Projects" : "Proyectos"}</Text>
+                <Text {...styles.menuLink.currentPath}>
+                  {router.locale === "en" ? "Projects" : "Proyectos"}
+                </Text>
               </Link>
             ) : (
               <Link href={"/"} passHref>
-                <Text {...styles.menuLink}>{router.locale === "en" ? "Projects" : "Proyectos"}</Text>
+                <Text {...styles.menuLink}>
+                  {router.locale === "en" ? "Projects" : "Proyectos"}
+                </Text>
               </Link>
             )}
             {menuData.pagesList.map((page, key) => {
-              if (router.asPath.includes(page.slug)) {
+              if (router.query.page === page.slug) {
                 return (
                   <Link href={"/" + page.slug} key={key} passHref>
                     <Text {...styles.menuLink.currentPath}>{page.title}</Text>
