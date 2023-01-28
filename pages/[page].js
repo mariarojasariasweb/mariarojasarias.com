@@ -9,7 +9,7 @@ import {
 import Layout from "../src/components/Layout";
 import Head from "next/head";
 
-const Page = ({ pageData }) => {
+const Page = ({ pageData, projectsIsOpen, handleProjects }) => {
   return (
     <>
       <Head>
@@ -21,6 +21,8 @@ const Page = ({ pageData }) => {
         menuData={pageData.menu}
         contentType={"page"}
         pageContent={pageData.pageContent}
+        projectsIsOpen={projectsIsOpen}
+        handleProjects={handleProjects}
       />
     </>
   );
@@ -69,4 +71,6 @@ export async function getStaticProps(context) {
 
 Page.propTypes = {
   pageData: PropTypes.object.isRequired,
+  projectsIsOpen: PropTypes.bool.isRequired,
+  handleProjects: PropTypes.func.isRequired
 };

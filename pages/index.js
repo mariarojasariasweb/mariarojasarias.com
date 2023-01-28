@@ -8,7 +8,7 @@ import {
 } from "../src/readDataFiles";
 import Head from "next/head";
 
-const Index = ({ pageData }) => {
+const Index = ({ pageData, projectsIsOpen, handleProjects }) => {
   return (
     <>
       <Head>
@@ -20,6 +20,8 @@ const Index = ({ pageData }) => {
         menuData={pageData.menu}
         contentType={"homepage"}
         pageContent={pageData.pageContent}
+        projectsIsOpen={projectsIsOpen}
+        handleProjects={handleProjects}
       />
     </>
   );
@@ -46,6 +48,8 @@ export async function getStaticProps(context) {
 
 Index.propTypes = {
   pageData: PropTypes.object.isRequired,
+  projectsIsOpen: PropTypes.bool.isRequired,
+  handleProjects: PropTypes.func.isRequired
 };
 
 export default Index;

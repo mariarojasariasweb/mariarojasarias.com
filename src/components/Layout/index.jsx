@@ -5,10 +5,10 @@ import PageContent from "../PageContent";
 import { Flex } from "@chakra-ui/react";
 import styles from "./styles";
 
-const Layout = ({ menuData, pageContent, contentType }) => {
+const Layout = ({ menuData, pageContent, contentType, projectsIsOpen, handleProjects }) => {
   return (
     <Flex {...styles.layoutContainer}>
-      <Menu menuData={menuData} />
+      <Menu menuData={menuData} projectsIsOpen={projectsIsOpen} handleProjects={handleProjects} />
       <PageContent pageContent={pageContent} contentType={contentType} />
     </Flex>
   );
@@ -17,7 +17,9 @@ const Layout = ({ menuData, pageContent, contentType }) => {
 Layout.propTypes = {
   menuData: PropTypes.object.isRequired,
   pageContent: PropTypes.object.isRequired,
-  contentType: PropTypes.string.isRequired
+  contentType: PropTypes.string.isRequired,
+  handleProjects: PropTypes.func.isRequired,
+  projectsIsOpen: PropTypes.bool.isRequired
 };
 
 export default Layout;

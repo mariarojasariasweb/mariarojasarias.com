@@ -13,25 +13,32 @@ import Link from "next/link";
 import styles from "./styles";
 import { useRouter } from "next/router";
 
-const MenuDesktop = ({ menuData }) => {
+const MenuDesktop = ({ menuData, projectsIsOpen, handleProjects }) => {
   const router = useRouter();
+
+  console.log(projectsIsOpen);
 
   return (
     <Flex {...styles.menuContainer}>
       <Link href="/" passHref>
         <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
       </Link>
-      <Accordion allowToggle>
+      <Accordion allowToggle index={projectsIsOpen ? 0 : null}>
         <AccordionItem {...styles.accordionItem}>
-          <AccordionButton {...styles.accordionButton}>
-            <Text {...styles.menuLink}>{router.locale === "en" ? "PROJECTS" : "PROYECTOS"}</Text>
+          <AccordionButton
+            {...styles.accordionButton}
+            onClick={() => handleProjects()}
+          >
+            <Text {...styles.menuLink}>
+              {router.locale === "en" ? "PROJECTS" : "PROYECTOS"}
+            </Text>
           </AccordionButton>
           <AccordionPanel {...styles.accordionPanel}>
             {menuData.projectsList.map((project, key) => {
               if (router.asPath.includes(project.slug)) {
                 return (
                   <Link href={"/projects/" + project.slug} key={key} passHref>
-                    <Text {...styles.menuLink.currentPath}>
+                    <Text {...styles.menuLink.currentPage}>
                       {project.title}
                     </Text>
                   </Link>
@@ -51,7 +58,7 @@ const MenuDesktop = ({ menuData }) => {
         if (router.asPath.includes(page.slug)) {
           return (
             <Link href={"/" + page.slug} key={key} passHref>
-              <Text {...styles.menuLink.currentPath}>{page.title}</Text>
+              <Text {...styles.menuLink.currentPage}>{page.title}</Text>
             </Link>
           );
         } else {
@@ -77,6 +84,8 @@ const MenuDesktop = ({ menuData }) => {
 
 MenuDesktop.propTypes = {
   menuData: PropTypes.object.isRequired,
+  projectsIsOpen: PropTypes.bool.isRequired,
+  handleProjects: PropTypes.func.isRequired,
 };
 
 export default MenuDesktop;

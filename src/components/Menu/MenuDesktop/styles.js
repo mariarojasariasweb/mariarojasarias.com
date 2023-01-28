@@ -42,7 +42,7 @@ const styles = {
       cursor: "pointer",
       color: "firebrick",
     },
-    currentPath: {
+    currentPage: {
       textTransform: "uppercase",
       fontSize: "11px",
       marginBottom: "20px",
