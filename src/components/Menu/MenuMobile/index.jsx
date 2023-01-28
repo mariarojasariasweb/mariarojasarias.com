@@ -27,9 +27,15 @@ const MenuMobile = ({ menuData }) => {
         </Flex>
         <AccordionPanel {...styles.accordionPanel}>
           <Flex {...styles.linksPanel}>
-            <Link href={"/"} passHref>
-              <Text {...styles.menuLink}>Projects</Text>
-            </Link>
+            {router.asPath === "/" ? (
+              <Link href={"/"} passHref>
+                <Text {...styles.menuLink.currentPath}>Projects</Text>
+              </Link>
+            ) : (
+              <Link href={"/"} passHref>
+                <Text {...styles.menuLink}>Projects</Text>
+              </Link>
+            )}
             {menuData.pagesList.map((page, key) => {
               if (router.asPath.includes(page.slug)) {
                 return (

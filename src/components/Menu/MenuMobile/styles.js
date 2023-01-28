@@ -22,10 +22,6 @@ const styles = {
       background: "crimson",
       color: "white",
     },
-    _hover: {
-      background: "crimson",
-      color: "white",
-    },
   },
   heading: {
     color: "crimson",
