@@ -103,7 +103,7 @@ const getMetadata = (locale) => {
   const output =
     locale === "en"
       ? { title: metadata.titleEn, description: metadata.descriptionEn }
-      : { title: metadata.titleEs, description: metadata.descriotionEs };
+      : { title: metadata.titleEs, description: metadata.descriptionEs };
 
   return output;
 };
