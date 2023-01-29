@@ -1,6 +1,6 @@
 const styles = {
   iconsContainer: {
-    marginTop: "20px",
+    marginTop: "0",
     gap: "30px",
   },
   socialIcon: {

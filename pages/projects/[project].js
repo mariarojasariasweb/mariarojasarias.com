@@ -17,6 +17,7 @@ const Project = ({ pageData, projectsIsOpen, handleProjects }) => {
           {pageData.pageContent.title} - {pageData.metadata.title}
         </title>
         <meta name="description" content={pageData.metadata.description} />
+        <meta property="og:image" content={pageData.pageContent.mainImage} />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <Layout

@@ -2,7 +2,7 @@ const styles = {
   menuContainer: {
     flexDirection: "column",
     position: "fixed",
-    width: "280px",
+    width: "250px",
   },
   heading: {
     color: "crimson",
