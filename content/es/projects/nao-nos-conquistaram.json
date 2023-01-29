@@ -1,0 +1,53 @@
+{
+  "title": "Não nos conquistaram",
+  "mainImage": "https://ucarecdn.com/ea279e54-a337-422d-8f19-e1e961f9955c/",
+  "specs": [
+    {
+      "spec": "Film/Film instalación"
+    },
+    {
+      "spec": "17 min"
+    },
+    {
+      "spec": "2021"
+    }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/80c0f0a6-ae7c-4afd-acea-a6eba654d635/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/3f24e92e-f591-468a-96d2-322befe69cff/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/ecdd757a-1d17-4c90-ae62-7b8cb857b64c/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/65f8fcfb-fea3-45d2-8f85-ed723c0516f7/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/38c8138c-b026-4941-8f62-3f07f441042f/"
+    },
+    {
+      "type": "textBlock",
+      "text": "Ciudad sobre “desierto”. Desierto selvático. Selva mutada en concreto. Concreto diseñado con múltiples formas que cubre la horizontal y se levanta en la vertical formando columnas y edificios. En el subterráneo y la periferia, un goce por la vida que sobrepasa las formas impuestas en diseños de calles y construcciones. Voces, historias, susurros, memorias, recuerdos y cuerpos que hablan de este núcleo urbano más allá del monumento. Esta es una arqueología sobre lo vivo en Brasilia, un homenaje a los pioneros, quienes pusieron las ideas, pero también las manos y que con su fogosidad hicieron vivir a esta ciudad."
+    },
+    {
+      "type": "textBlock",
+      "text": "Residencia - Casa de la cultura de América Latina. Brasilia, Brasil. 2017"
+    },
+    {
+      "type": "textBlock",
+      "text": "*Con el apoyo de la Organización de Estados Iberoamericanos OEI, Casa de la Cultura de América Latina y Archivo público de Brasilia.*"
+    },
+    {
+      "type": "vimeoBlock",
+      "id": "388365627"
+    }
+  ]
+}

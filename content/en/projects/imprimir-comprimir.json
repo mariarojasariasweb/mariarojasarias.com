@@ -1,0 +1,65 @@
+{
+  "title": "Imprimir - comprimir",
+  "mainImage": "https://ucarecdn.com/c4608f41-e565-4703-8022-be69f45b6604/",
+  "specs": [
+    {
+      "spec": "Video"
+    },
+    {
+      "spec": "1 min"
+    },
+    {
+      "spec": "2014"
+    }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/1b918d73-2b5b-4df7-a7e5-9370245d5a71/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/4811f5df-5f94-4523-a9ac-a4915e9ae0cf/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/034c6816-452a-45cc-bafd-7f6758715d67/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/34e11ba0-08da-430b-b1dd-3dccdd335d5c/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/a28e93bf-4048-44cb-bc56-8a0befff453a/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/ba31cd92-6009-4b80-9c07-bc10f54022f2/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/33b1e87d-13f7-4c29-b0b7-5b0af4556f04/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/7e74d7ad-2849-4e58-9400-93aef37ca9ce/"
+    },
+    {
+      "type": "textBlock",
+      "text": "Work based on the film ‘Victory’ by Maurice Tourneur – adaptation made in 1919 of the novel by Joseph Conrad."
+    },
+    {
+      "type": "textBlock",
+      "text": "I make shots of the frames in a new digitalized version of the film. Then, I print those frames onto acetates. These are accumulated again in devices and projected. From this projection comes a digital image that contains that decomposed time. Finally, with this pictures, a new movie is generated."
+    },
+    {
+      "type": "textBlock",
+      "text": "Re-writing the time of pictures."
+    },
+    {
+      "type": "vimeoBlock",
+      "id": "152094048"
+    }
+  ]
+}

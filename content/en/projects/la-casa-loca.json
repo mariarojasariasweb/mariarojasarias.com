@@ -1,0 +1,37 @@
+{
+  "title": "La casa loca",
+  "mainImage": "https://ucarecdn.com/5cf84fec-600e-4144-a9ce-d18d0060974d/",
+  "specs": [
+    {
+      "spec": "Video (found footage)"
+    },
+    {
+      "spec": "8 min"
+    },
+    {
+      "spec": "2016"
+    }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/dbed6417-cbba-4f22-a425-1a039ae777dc/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/9c697680-c3cb-4fb7-b260-338bf39628bd/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/c0b54514-516f-475a-875f-51cd00f92591/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/1ab2eac8-bc36-41ba-aeb6-523f57beb856/"
+    },
+    {
+      "type": "textBlock",
+      "text": "Video work from found footage in the Historical Archive Building of the National University of Colombia. A visual essay of re-writing with the files."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "FU",
+  "mainImage": "https://ucarecdn.com/0c0599a6-f328-4fdf-9616-d3c52c7467dc/",
+  "specs": [
+    {
+      "spec": "Film"
+    },
+    {
+      "spec": "María Rojas / Andrés Jurado"
+    },
+    {
+      "spec": "16 mm, HD"
+    },
+    {
+      "spec": "9 min"
+    },
+    {
+      "spec": "2019"
+    }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/211f9b91-b69a-4736-bd64-c053ab3300b8/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/3129f552-5f17-4f93-a9b1-e1a564706965/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/096866f3-fb8a-4914-bc34-401e94ff7f1e/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/8b7d38b6-d142-4966-b082-79a94c98cc36/"
+    },
+    {
+      "type": "textBlock",
+      "text": "Fu is the God of the dreams in the Muisca cosmogony, who was worshiped on the big island of the \"Fúquene\" lagoon, which means \"the bed of the God Fu\". This lagoon is located 116 kilometres from Bogota and tends to disappear. Those who were born here, surrounded by the \"Junco\" and the \"Enea\" (plants that grow in the lagoon), have dedicated their lives to weave them."
+    },
+    {
+      "type": "textBlock",
+      "text": "**Production**\\\nLa vulcanizadora"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Cast**\\\nJorge González\\\nJorge Castiblanco"
+    },
+    {
+      "type": "vimeoBlock",
+      "id": "292217169"
+    }
+  ]
+}

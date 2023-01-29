@@ -1,0 +1,30 @@
+{
+  "title": "Espacios confinados",
+  "mainImage": "https://ucarecdn.com/cc89013d-f605-4d74-9fd3-2565a861b2f9/",
+  "specs": [
+    {
+      "spec": "Instalación sonora, cerámica"
+    },
+    {
+      "spec": "2015"
+    }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/3eaca0e6-f404-4857-9f60-ef0c28f78156/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/aacc67bb-a035-479e-9667-768ea1b5c2d8/"
+    },
+    {
+      "type": "textBlock",
+      "text": "La ciudad que retumba se encuentra contenida aquí, como caos y con sus particularidades sonoras crean un murmullo que se reproduce sin fin. Al mismo tiempo, en un ejercicio de escucha dentro de esta, encuentro un silencio que habita en pequeños espacios albergando un ritmo diferente y con esto la calma. Son los humedales."
+    },
+    {
+      "type": "textBlock",
+      "text": "El sonido del humedal, es un sonido aislado, silenciado, desprovisto de la atención de un oyente, de un ser contemplativo. El reconocimiento de este entorno proporciona entonces una lectura que difiere de los estados cotidianos dentro de la ciudad. Los humedales son un ente natural que están siendo devorados por la no relación existente entre las creaciones del ser humano sobre la naturaleza"
+    }
+  ]
+}
