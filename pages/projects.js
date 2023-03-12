@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import HomepageVideo from "../src/components/HomepageVideo";
-import Head from "next/head";
+import Layout from "../src/components/Layout";
 import {
   getProjectsList,
   getPagesList,
   getMetadata,
 } from "../src/readDataFiles";
+import Head from "next/head";
 
-const Index = ({ pageData }) => {
+const Projects = ({ pageData, projectsIsOpen, handleProjects }) => {
   return (
     <>
       <Head>
@@ -16,7 +16,13 @@ const Index = ({ pageData }) => {
         <meta name="description" content={pageData.metadata.description} />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
-      <HomepageVideo />
+      <Layout
+        menuData={pageData.menu}
+        contentType={"homepage"}
+        pageContent={pageData.pageContent}
+        projectsIsOpen={projectsIsOpen}
+        handleProjects={handleProjects}
+      />
     </>
   );
 };
@@ -40,10 +46,10 @@ export async function getStaticProps(context) {
   };
 }
 
-Index.propTypes = {
+Projects.propTypes = {
   pageData: PropTypes.object.isRequired,
   projectsIsOpen: PropTypes.bool.isRequired,
-  handleProjects: PropTypes.func.isRequired,
+  handleProjects: PropTypes.func.isRequired
 };
 
-export default Index;
+export default Projects;
