@@ -9,8 +9,10 @@ import TextBlock from "./Blocks/TextBlock";
 import VimeoBlock from "./Blocks/VimeoBlock";
 import SocialMediaBlock from "./Blocks/SocialMediaBlock";
 import ProjectTiles from "./ProjectTiles";
+import DesktopTopMenu from "./DesktopTopMenu";
+import { useRouter } from "next/router";
 
-const PageContent = ({ pageContent, contentType }) => {
+const PageContent = ({ pageContent, contentType, menuData }) => {
   const blocks = {
     imageBlock: ImageBlock,
     textBlock: TextBlock,
@@ -18,8 +20,11 @@ const PageContent = ({ pageContent, contentType }) => {
     socialMediaBlock: SocialMediaBlock,
   };
 
+  const router = useRouter();
+
   return (
     <Flex {...styles.container}>
+      {router.asPath.includes("/projects/") && <DesktopTopMenu menuData={menuData} />}
       {contentType === "project" ? (
         <>
           <Title title={pageContent.title} />
@@ -47,6 +52,7 @@ const PageContent = ({ pageContent, contentType }) => {
 PageContent.propTypes = {
   pageContent: PropTypes.object.isRequired,
   contentType: PropTypes.string.isRequired,
+  menuData: PropTypes.object.isRequired,
 };
 
 export default PageContent;

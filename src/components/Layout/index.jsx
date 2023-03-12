@@ -9,7 +9,7 @@ const Layout = ({ menuData, pageContent, contentType, projectsIsOpen, handleProj
   return (
     <Flex {...styles.layoutContainer}>
       <Menu menuData={menuData} projectsIsOpen={projectsIsOpen} handleProjects={handleProjects} />
-      <PageContent pageContent={pageContent} contentType={contentType} />
+      <PageContent menuData={menuData} pageContent={pageContent} contentType={contentType} />
     </Flex>
   );
 };

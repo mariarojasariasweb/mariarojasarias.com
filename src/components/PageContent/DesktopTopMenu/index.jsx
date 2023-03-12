@@ -1,29 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Flex, Heading, Text } from "@chakra-ui/react";
-import Link from "next/link";
 import styles from "./styles";
+import { Flex, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
-const MenuDesktop = ({ menuData }) => {
+const DesktopTopMenu = ({ menuData }) => {
   const router = useRouter();
 
   return (
-    <Flex {...styles.menuContainer}>
-      <Link href="/" passHref>
-        <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
-      </Link>
-
+    <Flex {...styles.topMenuContainer}>
       {router.asPath === "/projects" ? (
         <Link href={"/projects"} passHref>
-          <Text {...styles.menuLink.current}>
-            {router.locale === "en" ? "PROJECTS" : "PROYECTOS"}
+          <Text {...styles.menuLink.currentPath}>
+            {router.locale === "en" ? "Projects" : "Proyectos"}
           </Text>
         </Link>
       ) : (
         <Link href={"/projects"} passHref>
           <Text {...styles.menuLink}>
-            {router.locale === "en" ? "PROJECTS" : "PROYECTOS"}
+            {router.locale === "en" ? "Projects" : "Proyectos"}
           </Text>
         </Link>
       )}
@@ -31,7 +27,7 @@ const MenuDesktop = ({ menuData }) => {
         if (router.query.page === page.slug) {
           return (
             <Link href={"/" + page.slug} key={key} passHref>
-              <Text {...styles.menuLink.current}>{page.title}</Text>
+              <Text {...styles.menuLink.currentPath}>{page.title}</Text>
             </Link>
           );
         } else {
@@ -55,10 +51,8 @@ const MenuDesktop = ({ menuData }) => {
   );
 };
 
-MenuDesktop.propTypes = {
+DesktopTopMenu.propTypes = {
   menuData: PropTypes.object.isRequired,
-  projectsIsOpen: PropTypes.bool.isRequired,
-  handleProjects: PropTypes.func.isRequired,
 };
 
-export default MenuDesktop;
+export default DesktopTopMenu;
