@@ -49,7 +49,7 @@ export async function getStaticProps(context) {
 Projects.propTypes = {
   pageData: PropTypes.object.isRequired,
   projectsIsOpen: PropTypes.bool.isRequired,
-  handleProjects: PropTypes.func.isRequired
+  handleProjects: PropTypes.func.isRequired,
 };
 
 export default Projects;

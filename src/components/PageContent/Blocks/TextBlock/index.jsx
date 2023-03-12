@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Box } from "@chakra-ui/react";
-import styles from './styles';
+import styles from "./styles";
 import { marked } from "marked";
 
 const TextBlock = ({ blockContent }) => {
@@ -12,7 +12,6 @@ const TextBlock = ({ blockContent }) => {
     />
   );
 };
-
 
 TextBlock.propTypes = {
   blockContent: PropTypes.object.isRequired,

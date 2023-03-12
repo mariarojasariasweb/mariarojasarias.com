@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { FaInstagram, FaVimeoV } from "react-icons/fa";
 import { Flex, Icon } from "@chakra-ui/react";
 import Link from "next/link";
-import styles from './styles';
+import styles from "./styles";
 
 const SocialMediaBlocks = ({ blockContent }) => {
   const icons = {

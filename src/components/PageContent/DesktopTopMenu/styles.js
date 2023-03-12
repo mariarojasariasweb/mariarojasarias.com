@@ -14,7 +14,7 @@ const styles = {
       fontSize: "14px",
       _hover: {
         cursor: "pointer",
-      }
+      },
     },
     _hover: {
       color: "firebrick",

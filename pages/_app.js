@@ -18,7 +18,11 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} projectsIsOpen={projectsIsOpen} handleProjects={handleProjects} />
+      <Component
+        {...pageProps}
+        projectsIsOpen={projectsIsOpen}
+        handleProjects={handleProjects}
+      />
     </ChakraProvider>
   );
 }

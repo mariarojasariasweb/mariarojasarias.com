@@ -13,7 +13,9 @@ const Page = ({ pageData, projectsIsOpen, handleProjects }) => {
   return (
     <>
       <Head>
-        <title>{pageData.pageContent.title} - {pageData.metadata.title}</title>
+        <title>
+          {pageData.pageContent.title} - {pageData.metadata.title}
+        </title>
         <meta name="description" content={pageData.metadata.description} />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
@@ -72,5 +74,5 @@ export async function getStaticProps(context) {
 Page.propTypes = {
   pageData: PropTypes.object.isRequired,
   projectsIsOpen: PropTypes.bool.isRequired,
-  handleProjects: PropTypes.func.isRequired
+  handleProjects: PropTypes.func.isRequired,
 };

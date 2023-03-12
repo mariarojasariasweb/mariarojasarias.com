@@ -11,7 +11,12 @@ const ProjectTiles = ({ projectsList }) => {
         <Link href={"/projects/" + project.slug} key={key} passHref>
           <Flex
             {...styles.tileContainer}
-            {...{ backgroundImage: "url('" + project.mainImage + "/-/grayscale/-/resize/1800x/-/format/webp/')" }}
+            {...{
+              backgroundImage:
+                "url('" +
+                project.mainImage +
+                "/-/grayscale/-/resize/1800x/-/format/webp/')",
+            }}
           >
             <Text {...styles.title}>{project.title}</Text>
           </Flex>

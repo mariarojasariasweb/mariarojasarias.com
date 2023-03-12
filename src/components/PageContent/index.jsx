@@ -24,7 +24,9 @@ const PageContent = ({ pageContent, contentType, menuData }) => {
 
   return (
     <Flex {...styles.container}>
-      {router.asPath.includes("/projects/") && <DesktopTopMenu menuData={menuData} />}
+      {router.asPath.includes("/projects/") && (
+        <DesktopTopMenu menuData={menuData} />
+      )}
       {contentType === "project" ? (
         <>
           <Title title={pageContent.title} />
