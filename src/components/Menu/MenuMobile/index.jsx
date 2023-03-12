@@ -28,13 +28,13 @@ const MenuMobile = ({ menuData }) => {
         <AccordionPanel {...styles.accordionPanel}>
           <Flex {...styles.linksPanel}>
             {router.asPath === "/projects" ? (
-              <Link href={"/"} passHref>
+              <Link href={"/projects"} passHref>
                 <Text {...styles.menuLink.currentPath}>
                   {router.locale === "en" ? "Projects" : "Proyectos"}
                 </Text>
               </Link>
             ) : (
-              <Link href={"/"} passHref>
+              <Link href={"/projects"} passHref>
                 <Text {...styles.menuLink}>
                   {router.locale === "en" ? "Projects" : "Proyectos"}
                 </Text>
