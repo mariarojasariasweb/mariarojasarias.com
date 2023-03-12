@@ -27,7 +27,7 @@ const MenuMobile = ({ menuData }) => {
         </Flex>
         <AccordionPanel {...styles.accordionPanel}>
           <Flex {...styles.linksPanel}>
-            {/* {router.asPath === "/" ? (
+            {router.asPath === "/projects" ? (
               <Link href={"/"} passHref>
                 <Text {...styles.menuLink.currentPath}>
                   {router.locale === "en" ? "Projects" : "Proyectos"}
@@ -39,12 +39,7 @@ const MenuMobile = ({ menuData }) => {
                   {router.locale === "en" ? "Projects" : "Proyectos"}
                 </Text>
               </Link>
-            )} */}
-            <Link href={"/projects"} passHref>
-              <Text {...styles.menuLink}>
-                {router.locale === "en" ? "Projects" : "Proyectos"}
-              </Text>
-            </Link>
+            )}
             {menuData.pagesList.map((page, key) => {
               if (router.query.page === page.slug) {
                 return (
