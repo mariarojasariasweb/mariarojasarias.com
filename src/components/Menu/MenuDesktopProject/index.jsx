@@ -10,7 +10,7 @@ const MenuDesktopProject = ({ menuData }) => {
 
   return (
     <Flex {...styles.menuContainer}>
-      <Link href="/" passHref>
+      <Link href="/projects" passHref>
         <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
       </Link>
       {menuData.projectsList.map((project, key) => {
