@@ -1,5 +1,5 @@
 {
-  "title": "Imprimir - comprimir",
+  "title": "Imprimir*comprimir",
   "mainImage": "https://ucarecdn.com/c4608f41-e565-4703-8022-be69f45b6604/",
   "specs": [
     {
@@ -47,15 +47,7 @@
     },
     {
       "type": "textBlock",
-      "text": "Trabajo a partir de la película Victoria de Maurice Turner, Adaptación realizada en 1919 a la novela de Joseph Conrad."
-    },
-    {
-      "type": "textBlock",
-      "text": "Realizo captura de los fotogramas de una versión digitalizada de la película, luego imprimo estos fotogramas en acetatos. Estos son acumulados en dispositivas nuevamente y proyectados, de esta proyección sale una imagen digital que contiene ese tiempo descompuesto y con estas imágenes se genera una nueva película."
-    },
-    {
-      "type": "textBlock",
-      "text": "Re-escribiendo el tiempo de las imágenes."
+      "text": "Trabajo a partir de las películas *Victoria* (1919 y 1949) de Maurice Tourneur y John Cromwell, las primeras dos adaptaciones realizadas a la novela de Joseph Conrad. Realizo captura de los fotogramas de las versiones digitalizadas de las películas que son vendidas en el mercado pirata en Bogotá, luego imprimo esos fotogramas en el material fílmico. Estos son acumulados/superpuestos y proyectados nuevamente. En la proyección se desdobla una imagen que contiene ese tiempo descompuesto y así, se genera una nueva película: **re-escribiendo el tiempo de las imágenes**."
     },
     {
       "type": "vimeoBlock",
