@@ -6,6 +6,7 @@ import {
   getProjectsList,
   getPagesList,
   getMetadata,
+  getVideo,
 } from "../src/readDataFiles";
 
 const Index = ({ pageData }) => {
@@ -16,7 +17,7 @@ const Index = ({ pageData }) => {
         <meta name="description" content={pageData.metadata.description} />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
-      <HomepageVideo />
+      <HomepageVideo video={pageData.video} />
     </>
   );
 };
@@ -31,6 +32,7 @@ export async function getStaticProps(context) {
       projectsList: getProjectsList(context.locale),
     },
     metadata: getMetadata(context.locale),
+    video: getVideo(),
   };
 
   return {

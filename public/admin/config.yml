@@ -49,6 +49,7 @@ collections:
           - { label: "Title ES", name: "titleEs", widget: string }
           - { label: "Description EN", name: "descriptionEn", widget: string }
           - { label: "Description ES", name: "descriptionEs", widget: string }
+          - { label: "Home video URL", name: "homeVideoUrl", widget: string }
   - label: "Pages [EN]"
     name: "pagesEn"
     folder: "content/en"

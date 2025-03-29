@@ -3,19 +3,11 @@ import { AspectRatio, Box, Flex, Heading, Text } from "@chakra-ui/react";
 import styles from "./styles";
 import Link from "next/link";
 
-const HomepageVideo = () => {
+const HomepageVideo = ({ video }) => {
   return (
     <AspectRatio {...styles.videoContainer}>
       <>
-        <Box
-          as="video"
-          src={
-            "https://res.cloudinary.com/dy3pzwx7m/video/upload/v1678648125/maria-rojas-arias_doa3f7.mp4"
-          }
-          autoPlay
-          muted
-          loop
-        ></Box>
+        <Box as="video" src={video} autoPlay muted loop></Box>
         <Flex {...styles.textContainer}>
           <Heading {...styles.heading}>MARÍA ROJAS ARIAS</Heading>
           <Flex {...styles.languageContainer}>

@@ -108,10 +108,23 @@ const getMetadata = (locale) => {
   return output;
 };
 
+/* FUNCIÓN PARA TRAER VIDEO */
+
+const getVideo = () => {
+  const settings = JSON.parse(
+    fs.readFileSync(contentDirectory + "/settings.json")
+  );
+
+  const videoUrl = settings.homeVideoUrl;
+
+  return videoUrl;
+};
+
 export {
   getProjectsList,
   getPagesList,
   getProjectContent,
   getPageContent,
   getMetadata,
+  getVideo
 };
