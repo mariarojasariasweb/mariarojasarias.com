@@ -2,6 +2,7 @@ import React from "react";
 import { AspectRatio, Box, Flex, Heading, Text } from "@chakra-ui/react";
 import styles from "./styles";
 import Link from "next/link";
+import PropTypes from "prop-types";
 
 const HomepageVideo = ({ video }) => {
   return (
@@ -22,6 +23,10 @@ const HomepageVideo = ({ video }) => {
       </>
     </AspectRatio>
   );
+};
+
+HomepageVideo.propTypes = {
+  video: PropTypes.string.isRequired,
 };
 
 export default HomepageVideo;
