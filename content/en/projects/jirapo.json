@@ -1,0 +1,78 @@
+{
+  "title": "Jirapo",
+  "mainImage": "https://ucarecdn.com/0cee87e6-c7fc-4e67-a346-44f28859b99e/",
+  "specs": [
+    {
+      "spec": "Film"
+    },
+    {
+      "spec": " Directed by María Rojas Arias "
+    },
+    {
+      "spec": "2025 "
+    },
+    {
+      "spec": " 16mm transfer 4k "
+    },
+    {
+      "spec": "5.1 & 7.1 Atmos "
+    },
+    {
+      "spec": "19 min"
+    }
+  ],
+  "projectContent": [
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/0997f8d3-b24e-4985-9df3-8508dc2481a7/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/3a3a050e-15ce-4382-acae-9d2341cd040d/"
+    },
+    {
+      "type": "imageBlock",
+      "image": "https://ucarecdn.com/fa74f882-6748-4940-a87f-0f63506d8dba/"
+    },
+    {
+      "type": "textBlock",
+      "text": "Laura discovers stingless bee nests in her ancestors' graves, sparking a journey that questions death, violence, and the sweetness of life."
+    },
+    {
+      "type": "textBlock",
+      "text": "**A film by**\\\nMaría Rojas Arias"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Production**\\\nAndrés Jurado. \\\nLa Vulcanizadora"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Co-production**\\\nKintop (Portugal)"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Sound design **Andrés Silva, Andrés Jurado, Maria Rojas."
+    },
+    {
+      "type": "textBlock",
+      "text": "**Sound mixing **La Tina Studios"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Editing **Maria Rojas Arias"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Music**Ana María Romano G., Lucrecia Dalt"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Color grading **Gonçalo Ferreira"
+    },
+    {
+      "type": "textBlock",
+      "text": "**Cast**\\\nLaura Alexandra R.\\\nAnny Alexandra Musuke"
+    }
+  ]
+}
