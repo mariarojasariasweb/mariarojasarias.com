@@ -6,12 +6,6 @@
       "spec": "Film"
     },
     {
-      "spec": " Directed by María Rojas Arias "
-    },
-    {
-      "spec": "2025 "
-    },
-    {
       "spec": " 16mm transfer 4k "
     },
     {
@@ -19,6 +13,9 @@
     },
     {
       "spec": "19 min"
+    },
+    {
+      "spec": "2025 "
     }
   ],
   "projectContent": [
@@ -52,23 +49,23 @@
     },
     {
       "type": "textBlock",
-      "text": "**Sound design **Andrés Silva, Andrés Jurado, Maria Rojas."
+      "text": "**Sound design** \n\nAndrés Silva, Andrés Jurado, Maria Rojas."
     },
     {
       "type": "textBlock",
-      "text": "**Sound mixing **La Tina Studios"
+      "text": "**Sound mixing** \n\nLa Tina Studios"
     },
     {
       "type": "textBlock",
-      "text": "**Editing **Maria Rojas Arias"
+      "text": "**Editing** \n\nMaria Rojas Arias"
     },
     {
       "type": "textBlock",
-      "text": "**Music**Ana María Romano G., Lucrecia Dalt"
+      "text": "**Music**\n\nAna María Romano G., Lucrecia Dalt"
     },
     {
       "type": "textBlock",
-      "text": "**Color grading **Gonçalo Ferreira"
+      "text": "**Color grading** \n\nGonçalo Ferreira"
     },
     {
       "type": "textBlock",
